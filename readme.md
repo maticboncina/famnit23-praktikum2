@@ -21,7 +21,6 @@ The repository serves as a personal archive of all code written during the cours
 1. Classification based on class type:
     - `practice`
       - `html` - Code from practice classes
-
     - `class`
       - `html` - Lecture notes and code examples
 2. Organised code by dates (yyyy-mm-dd).
