@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flag of Georgia</title>
+    <style>
+        .georgia-flag {
+            width: 300px; /* Adjust based on your preference */
+            height: 200px; /* Adjust based on your preference */
+            background-color: white;
+            position: relative;
+        }
+        .georgia-flag .big-cross, .georgia-flag .small-cross {
+            background-color: red;
+        }
+        .georgia-flag .big-cross {
+            position: absolute;
+            width: 20%; /* Width of the big cross */
+            height: 100%;
+            left: 40%; /* Center the big cross */
+        }
+        .georgia-flag .small-cross {
+            position: absolute;
+            width: 20%; /* Width of the small cross */
+            height: 20%; /* Height of the small cross */
+        }
+        .georgia-flag .top-left, .georgia-flag .top-right {
+            top: 10%; /* Position from the top */
+        }
+        .georgia-flag .bottom-left, .georgia-flag .bottom-right {
+            bottom: 10%; /* Position from the bottom */
+        }
+        .georgia-flag .top-left, .georgia-flag .bottom-left {
+            left: 10%; /* Position from the left */
+        }
+        .georgia-flag .top-right, .georgia-flag .bottom-right {
+            right: 10%; /* Position from the right */
+        }
+    </style>
+</head>
+<body>
+    <div class="georgia-flag">
+        <div class="big-cross"></div>
+        <div class="small-cross top-left"></div>
+        <div class="small-cross top-right"></div>
+        <div class="small-cross bottom-left"></div>
+        <div class="small-cross bottom-right"></div>
+    </div>
+</body>
+</html>
