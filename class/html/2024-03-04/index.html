@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pef Šis Prijava</title>
+</head>
+<body>
+  <form oninput="xstarost.value=parseInt(age.value)+(starost.value)">
+    <fieldset>
+      <legend>Osnovni podatki</legend>
+      <label for="ime">Ime:</label>
+      <input type="text" id="idime" name="ime" value="Janez">
+      <br>
+      <br>
+      <label for="priimek">Priimek:</label>
+      <input type="text" id="idpriimek" name="priimek" value="Novak">
+      <br>
+      <br>
+      <label for="birthday">Datum rojstva</label>
+      <input type="date" id="birthday" name="birthday">
+      <br>
+      <br>
+      <label for="starost">Vasa starost:</label>
+      <input type="range" id="age" name="age" value="0">
+      100 +
+      <br>
+      <br>
+      <input type="number" id="starost" name="starost" value="18">
+      =
+      <output name="starost" for="age starost"></output>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+      <legend>Kontaktni podatki</legend>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="phone">Tel:</label><br>
+      <input type="tel" id="tel" name="tel" placeholder="040-123-456" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" size="8"><br><br>
+      <label for="homepage">Spletna stran vasega CVja:</label>
+      <input type="url" id="page" name="page">
+      <br><br>
+      <label for="pwd">Geslo:</label>
+      <input type="password" id="pwd" name="pwd">
+      <br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <label for="smerStudija">Smer studija:</label>
+      <br>
+      <input type="radio" id="smer" name="smer">
+      <label for="predsola">Predsolska vzgoja</label>
+      <br>
+      <input type="radio" id="smer" name="smer">
+      <label for="razredniP">Razredni pouk</label>
+      <br>
+      <input type="radio" id="smer" name="smer">
+      <label for="socP">Socialna pedagogika</label>
+      <br>
+      <input type="radio" id="smer" name="smer">
+      <label for="vizual">Vizualne umetnosti in oblikovanje</label>
+      <br>
+      <br>
+      <label for="lenik">Letnik v katerega se vpisujete:</label>
+      <select id="letnik" name="letnik">
+        <option value="prvi">1</option>
+        <option value="drugi">2</option>
+        <option value="tretji">3</option>
+        <option value="cetrti">4</option>
+      </select>
+      <br>
+      <br>
+
+      <label for="stvpisa">Stevilo vpisa</label>
+      <input list="stvpisa" name="stvpisa">
+      <datalist id="stvpisa">
+        <option value="Prvic">
+        <option value="Drugic">
+        <option value="Tretjic">
+        <option value="Zadnjic">
+      </datalist>
+    </fieldset>
+    <br>
+    <fieldset>
+      <label for="quantity">Ocena pri likovni v 4. letniku</label>
+      <input type="number" id="quantity" name="grade" min="2" max="5">
+      <br>
+      <label for="points">Dosezeno st tock na maturi</label>
+      <input type="number" id="points" name="points" step="2" min="0">
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+      <legend>Umetniske izkusnje</legend>
+      <label>Ali ze imate izkusnje z umetnostjo?</label>
+      <br>
+      <input type="checkbox" id="i1" name="i1" value="Music">
+      <label for="i1">Music</label>
+      <br>
+      <input type="checkbox" id="i2" name="i2" value="Music">
+      <label for="i2">Music</label>
+      <br>
+      <input type="checkbox" id="i3" name="i3" value="Music">
+      <label for="i3">Music</label>
+      <br>
+      <br>
+      <label for="barva">Vasa najljubsa barva?</label>
+      <input type="color" id="color" name="color">
+    </fieldset>
+
+    <br>
+    <br>
+    <fieldset>
+      <legend>Zakljucek prijave</legend>
+      <br>
+      <label for="studid">Shranite si svojo studentsko ID.</label>
+      <input type="text" id="studid" name="studid" value="98123456" readonly>
+      <br><br>
+      <label for="studpwd">Vase generirano geslo:</label>
+      <input type="text" id="studpwd" name="studpwd" value="0123" disabled>
+      <br><br>
+      <input type="hidden" id="custID" name="custID" value="123">
+    </fieldset>
+
+    <label for="spricevalo">Prilozi spricevali za 3. in 4. letnik sš.</label>
+    <input type="file" id="spricevalo" name="spricevalo" multiple>
+    <br><br>
+    <input type="reset" value="Pobrisi vrednosti" onclick="alert('Podatki so se izbrisali.')">
+    <input type="submit" value="Pošlji">
+  </form>
+</body>
+</html>
