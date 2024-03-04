@@ -28,4 +28,6 @@ The repository serves as a personal archive of all code written during the cours
 3. Optionally organised further to maintain a clean structure.
 
 ## Contributions
+
+Some HTML code is contributed by [Gregor Ahlin](https://github.com/Gahlin7/Gahlin7).
 This is a personal space, thus contributions or pull requests will (probably) not be accepted.
