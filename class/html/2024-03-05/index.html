@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Zastava Naročilnica</title>
+        <meta charset="UTF-8">
+        <style>
+            label{
+                font-weight: bold;
+            }
+            .normal{
+                font-weight: normal !important;
+            }
+            table{
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: auto;
+                padding-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Naročilnica</legend>
+                <label for="model">Model avtomobila</label>
+                <br>
+                <select id="model" name="model">
+                    <option value="Yugo">Yugo</option>
+                    <option value="101">101</option>
+                    <option value="1200">1200</option>
+                    <option value="Skala55">Skala 55</option>
+                  </select>
+                <br>
+                <br>
+                <label for="barva">Barva avtomobila:</label>
+                    <br>
+                    <label class="normal" id="barva-bela">Bela</label>
+                    <input type="radio" id="barva-bela" name="barva" value="bela">
+                    <br>
+                    <label class="normal" id="barva-rdeca">Rdeca</label>
+                    <input type="radio" id="barva-rdeca" name="barva" value="rdeca">
+                    <br>
+                    <label class="normal" id="barva-modra">Modra</label>
+                    <input type="radio" id="barva-modra" name="barva" value="modra">
+                    <br>
+                    <label class="normal" id="barva-crna">Crna</label>
+                    <input type="radio" id="barva-crna" name="barva" value="crna">
+                    <br>
+                    <label class="normal" id="barva-drugo">Druga barva</label>
+                    <input type="radio" id="barva-drugo" name="barva" value="druga">
+                    <input type="color" id="color" name="color">
+                <br>
+                <br>
+                <label for="stvrat">Stevilo vrat:</label>
+                <br>
+                <input type="number" id="stvrat" name="stvrat" min="2" max="5">
+                <br>
+                <br>
+                <label for="menjalnik">Menjalnik:</label>
+                <br>
+                <input type="checkbox" id="menjalnik-rocni" name="menjalnik" value="rocni">
+                <label class="normal"for="menjalnik-rocni">Rocni</label>
+                <br>
+                <input type="checkbox" id="menjalnik-avtomatski" name="menjalnik" value="avtomatski">
+                <label class="normal" for="menjalnik-avtomatski">Avtomatski</label>
+                <br>
+                <br>
+                <label for="gorivo">Gorivo (Diesel, Unicorn Farts, Bencin, Gas)</label>
+                <br>
+                <input type="text" id="gorivo" name="gorivo">
+                <br>
+                <br>
+                    <label for="range">Stevilo žrebcev</label>
+                    <br>
+                    0
+                    <input type="range" min="1" max="1000" value="350" c id="Range">
+                    1000
+                    <br>
+                    <br>
+                <label for="extra">Dodatna oprema kar vam srce poželi</label>
+                <br>
+                <input type="text" id="extra" name="extra">
+                <br>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Osnovni podatki</legend>
+                <label for="ime">Ime:</label>
+                <input type="text" id="idime" name="ime">
+                <label for="priimek">Priimek:</label>
+                <input type="text" id="idpriimek" name="priimek">
+                <br>
+                <br>
+                <label for="dostava">Datum in ura dostave:</label>
+                <br>
+                <input type="datetime-local" id="dostava" name="dostava">
+                <br>
+                <br>
+              </fieldset>
+              <input type="reset" value="Pobrisi vrednosti" onclick="alert('Podatki so se izbrisali.')">
+              <input type="button" value="Poslji" id="poslji">
+              <script>
+                document.getElementById('poslji').onclick = function() {
+                    window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+                };
+            </script>
+        </form>
+    </body>
+</html>
