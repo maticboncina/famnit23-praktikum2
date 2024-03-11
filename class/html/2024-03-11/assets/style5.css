@@ -1,0 +1,64 @@
+body{
+    background-color: #F0F; /* Neon pink for maximum strain */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Widely disliked font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: spin 5s linear infinite; /* Make everything spin! */
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    color: #0FF; /* Clashing cyan */
+    position: sticky;
+    top: 0px;
+    text-shadow: 10px 10px 5px #FF0; /* Harsh yellow shadow */
+    background-color: #00F; /* Bright blue background */
+    border: 5px dotted #0F0; /* Dotted green border */
+    font-size: 50px; /* Extra large */
+    transform: skew(20deg, 20deg); /* Skew for distortion */
+}
+
+h3{
+    text-align: center;
+    margin-top: 50px;
+    color: #FFA500; /* Loud orange */
+    position: sticky;
+    top: 90px;
+    text-transform: uppercase; /* ALL CAPS */
+    text-shadow: 10px 10px 5px #F0F; /* Pink shadow */
+    background-color: #000; /* Black background */
+    border: 5px dashed #FFF; /* White dashed border */
+    font-size: 40px; /* Very large but slightly smaller than h1 */
+    transform: rotate(-30deg); /* Rotate for a dizzy effect */
+}
+
+table{
+    width: 100%;
+    margin-top: 50px;
+    border-collapse: separate; /* Prevent cells from sticking together */
+    box-shadow: 10px 10px 10px #8B0000; /* Deep red shadow */
+    background-color: #FFFF00; /* Eye-sore yellow */
+    transform: scale(1.1); /* Enlarge slightly for no good reason */
+    border: 10px solid #FF1493; /* Deep pink solid border */
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00FFFF; /* Cyan, clashes with everything */
+    padding: 20px 0; /* More padding for less reason */
+    box-shadow: 10px 10px 10px #0000FF; /* Blue shadow */
+    text-align: center;
+    font-size: 30px; /* Unnecessarily large */
+    color: #8A2BE2; /* Deep purple text */
+    border: 5px wavy #FF4500; /* Wavy border, because why not? */
+}

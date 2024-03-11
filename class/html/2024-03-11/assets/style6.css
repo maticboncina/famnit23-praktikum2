@@ -1,0 +1,77 @@
+body {
+    background-color: #FF00FF; /* Screaming bright magenta */
+    font-family: 'Papyrus', fantasy; /* Infamously disliked font */
+    overflow: hidden; /* Hide scroll bars for an annoying experience */
+    animation: flash 2s linear infinite; /* Flashing colors for discomfort */
+    cursor: crosshair; /* Unusual cursor for a web page */
+}
+
+@keyframes flash {
+    0% { background-color: #FF00FF; }
+    25% { background-color: #00FFFF; }
+    50% { background-color: #FFFF00; }
+    75% { background-color: #FF00FF; }
+    100% { background-color: #00FFFF; }
+}
+
+h1 {
+    text-align: justify; /* Awkward alignment for a header */
+    margin-top: 0px;
+    color: #FFFF00; /* Bright yellow on bright background */
+    position: relative; /* Not fixed, just to make it confusing */
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) infinite; /* Shake animation for headache */
+    text-shadow: 0 0 8px #0000FF; /* Blurry blue shadow */
+    font-size: 60px; /* Oversized */
+    background-image: linear-gradient(to right, #FF1493, #FF4500); /* Clashy gradient */
+    border: 5px zigzag #00FF00; /* Non-existent zigzag border for confusion */
+    padding: 20px; /* Excessive padding */
+}
+
+@keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(2px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+    40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+h3 {
+    text-align: right; /* Misaligned subheader */
+    margin: 50px 0 20px 0;
+    color: #00FF00; /* Neon green, hard on the eyes */
+    position: absolute; /* Arbitrarily positioned */
+    left: 50%; /* Misplaced to the side */
+    transform: rotate(180deg); /* Upside-down text */
+    font-size: 45px; /* Inconsistently large */
+    text-decoration: line-through; /* Strikethrough for no reason */
+    background-color: #0000FF; /* Deep blue for contrast nightmare */
+    border: 10px double #FFA500; /* Thick double border in a clashing color */
+}
+
+table {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: separate;
+    table-layout: fixed; /* Bad for responsiveness */
+    animation: expand 8s ease-in-out infinite; /* Annoyingly changing size */
+    background-color: #800080; /* Muddy purple */
+    color: #00FFFF; /* Cyan text on purple, hard to read */
+    border: 5px groove #FFD700; /* Groove border, old-fashioned */
+}
+
+@keyframes expand {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.fixed {
+    position: absolute; /* Constantly moves with scrolling */
+    bottom: 0;
+    right: 0;
+    width: 50%; /* Cover part of the content for no reason */
+    background-color: #FF69B4; /* Hot pink, distracting */
+    padding: 15px;
+    text-align: justify; /* Justify text for inconsistency */
+    font-size: 25px; /* Randomly large */
+    color: #8B008B; /* Dark magenta, hard to see on pink */
+    border: 10px outset #FFFF00; /* Bright yellow border, very outdated */
+}

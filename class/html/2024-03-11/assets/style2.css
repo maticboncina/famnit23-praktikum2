@@ -1,0 +1,57 @@
+body {
+    background-color: #FF00FF; /* Bright pink */
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Use Comic Sans */
+    margin: 40px; /* Add margin */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box;
+    transform: rotate(5deg); /* Slightly rotate the entire content */
+}
+
+h1 {
+    text-align: right; /* Align text to the right */
+    margin-top: 100px; /* Increase top margin */
+    color: #00FF00; /* Bright green */
+    position: sticky;
+    top: 0px;
+    text-shadow: 10px 10px 10px #0000FF; /* Intense blue shadow */
+    font-size: 5em; /* Increase font size */
+    background-color: #FFA500; /* Bright orange background */
+    border: 5px dashed #0000FF; /* Blue dashed border */
+}
+
+h3 {
+    text-align: left; /* Align text to the left */
+    margin-top: 150px; /* Increase top margin */
+    color: #FFFF00; /* Bright yellow */
+    position: sticky;
+    top: 200px; /* Increase sticky top */
+    text-transform: uppercase; /* Change to uppercase */
+    text-shadow: 8px 8px 8px #FF00FF; /* Intense pink shadow */
+    font-size: 3em; /* Increase font size */
+    background-color: #00FFFF; /* Bright cyan background */
+    border: 10px dotted #FF0000; /* Red dotted border */
+}
+
+table {
+    width: 80%; /* Reduce table width */
+    margin-top: 150px; /* Increase top margin */
+    border-collapse: separate; /* Prevent borders from collapsing */
+    box-shadow: 10px 10px 20px #000; /* Increase shadow size */
+    transform: scale(1.1) rotate(10deg); /* Scale and rotate the table */
+    background-color: #8A2BE2; /* Deep purple background */
+}
+
+.fixed {
+    position: fixed;
+    top: 50%; /* Move to middle of the screen */
+    left: 50%; /* Move to middle of the screen */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    width: 50%; /* Reduce width */
+    background-color: #00FF00; /* Bright green */
+    padding: 20px 0; /* Increase padding */
+    box-shadow: 0px 10px 15px #FF1493; /* Deep pink shadow */
+    text-align: justify; /* Justify text */
+    font-size: 2em; /* Increase font size */
+    border: 10px solid #FFFF00; /* Solid yellow border */
+    opacity: 0.7; /* Make it semi-transparent */
+}
